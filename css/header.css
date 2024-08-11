@@ -1,0 +1,24 @@
+.header{
+    position: fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    width: 100%;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: end;
+    z-index: 100;
+}
+
+.nav__container{
+    margin-right: 2rem;
+}
+
+.nav__list{
+    display: flex;
+    gap: 2rem
+}
+
+.nav__item{
+    font-size: 0.8rem;
+    display: flex;
+}

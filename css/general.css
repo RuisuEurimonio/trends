@@ -1,0 +1,78 @@
+html, body {
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-block: 10vh;
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: "CustomFont";
+    src: url(../assets/font/Roboto-Medium.ttf) format("truetype");
+    font-weight: medium;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "CustomFont";
+    src: url(../assets/font/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "CustomFont";
+    src: url(../assets/font/Roboto-Regular.ttf) format("truetype");
+    font-weight: regular;
+    font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'CustomFont', sans-serif;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 3rem;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.icon{
+    position: absolute;
+    bottom: 4rem;
+    width: 2rem;
+    animation: infinite 5s DownToUp alternate-reverse;
+}
+
+@keyframes DownToUp {
+    0% { 
+        transform: translateY(10px);
+    }
+    30% {
+        transform: translateY(-10px)
+    }
+    60% {
+        transform: translateY(10px)
+    }
+    100% {
+        transform:translateY(-10px)
+    }
+
+}
