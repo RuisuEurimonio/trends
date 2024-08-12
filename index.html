@@ -321,10 +321,9 @@
                             </figcaption>
                         </div>
                         <ul class="sublist sublist-examples" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-250">
-                            <li id="cascadeButton"> Cascada (Waterfall). </li>
-                            <li id="prototypeButton"> Prototipos. </li>
-                            <li id="incrementalButton"> Incremental. </li>
-                            <li id="cobbitButton"> COBIT. </li>
+                            <li class="list__link" id="cascadeButton"> Cascada (Waterfall). </li>
+                            <li class="list__link" id="prototypeButton"> Prototipos. </li>
+                            <li class="list__link" id="incrementalButton"> Incremental. </li>
                         </ul>
                     </li>
                     <li class="types__item" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-150">
@@ -357,30 +356,87 @@
                                 <p class="float"> ¿Qué se puede conseguir? </p>
                             </figcaption>
                         </div>
-                        <p class="center light" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-150"> Un producto final contruido y perfeccionado progresivamente con un equipo autosuficiente e independiente.
-                            <div class="center" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-150">
+                        <p class="center light" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-300"> Un producto final contruido y perfeccionado progresivamente con un equipo autosuficiente e independiente.
+                            <div class="center" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-300">
                                 <figcaption class="map__arrow">
                                     <img class="icon center" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia abajo">
                                     <p class="float"> ¿Qué modelos existen? </p>
                                 </figcaption>
                             </div>
-                            <ul class="sublist sublist-examples" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-250">
-                                <li> Agile. </li>
-                                <li> Scrum. </li>
-                                <li> DevOps. </li>
-                                <li> Kanban. </li>
+                            <ul class="sublist sublist-examples" data-aos="fade-down" data-aos-anchor-placement="center-center" data-aos-offset="-350">
+                                <li class="list__link" id="scrumButton"> Scrum. </li>
+                                <li class="list__link" id="devopsButton"> DevOps. </li>
+                                <li class="list__link" id="kanbanButton"> Kanban. </li>
                             </ul>
                     </li>
                 </ul>
             </div>
         </div>
-        
-        
-        
+    </section>
+
+    <section class="modal hidden" id="cascade">
+        <div class="modal__container" id="cascadeContainer">
+            <h3 class="modal__title"> Metodología de desarrollo de Cascada o WaterFall </h3>
+            <figure>
+                <img src="./assets/img/cascade.jpg" class="modal__image">
+                <figcaption> Cada fase se desarrolla con base a la anterior, por lo tanto, se debe finalizar primero esta para continuar con la siguiente. </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="prototipe">
+        <div class="modal__container" id="prototipeContainer">
+            <h3 class="modal__title"> Metodología de desarrollo de Prototipo. </h3>
+            <figure>
+                <img src="./assets/img/prototipe.png" class="modal__image">
+                <figcaption> Sigue un esquema circular con una serie de fases, una seguida de la otra, basandose en el desarrollo de un borrador del software, lo cuál supone un mayor gasto. </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="incremental">
+        <div class="modal__container" id="incrementalContainer">
+            <h3 class="modal__title"> Metodología de desarrollo Incremental. </h3>
+            <figure>
+                <img src="./assets/img/incremental.png" class="modal__image">
+                <figcaption> Parecido a la metodología de cascada, este supone dividir el trabajo con funciones, en la que con cada función aprobada, se desarrolla la siguiente siguiendo las mismas fases, su desventaja recae en su lentitud de desarrollo. </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="scrum">
+        <div class="modal__container" id="scrumContainer">
+            <h3 class="modal__title"> Metodología de desarrollo Scrum. </h3>
+            <figure>
+                <img src="./assets/img/scrum.webp" class="modal__image">
+                <figcaption> Esta metodología se destaca por ser un trabajo basado en prácticas y roles, dividiendose el trabajo para su desarrollo y entrega en un determinado tiempo, permitiendo que los proyectos sean más adaptables, interactivos, rapidos y eficaces. </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="devops">
+        <div class="modal__container" id="devopsContainer">
+            <h3 class="modal__title"> DevOps. </h3>
+            <figure>
+                <img src="./assets/img/devops.png" class="modal__image">
+                <figcaption> Aunque precisamente no es una metodología, esta se relaciona y complementa las metodologías ágiles, en la que se prioriza la colaboración, entrega continua y adaptación, este enfoque extiende la colaboración a otras areás. </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="kanban">
+        <div class="modal__container" id="kanbanContainer">
+            <h3 class="modal__title"> Metodología de desarrollo Kanban. </h3>
+            <figure>
+                <img src="./assets/img/kanban.png" class="modal__image">
+                <figcaption> Esta metodología la igual que las anteriores, se centra en el trabajo colaborativo, en la que se centra en la visualización del flujo de trabajo, funcionando por medio de tarjetas las cuales van avanzando por las diferentes etapas. </figcaption>
+            </figure>
+        </div>
     </section>
 
     <script type="module" src="./js/typingEffect.js"></script>
     <script src="./js/tableEvents.js"></script>
+    <script src="./js/mapEvents.js"></script>
 
 </body>
 
