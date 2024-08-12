@@ -34,7 +34,8 @@ const titleTrends = new TypeIt("#titleTrends",{
     speed:100,
     waitUntilVisible: true,
     afterComplete: ()=>{yearTrend.go(), titleTrends.destroy()}
-}).type("Tendencias tecnologicas.")
+}).pause(1500)
+    .type("Tendencias tecnologicas.")
     .pause(500)
     .delete(7)
     .type("ógicas.")
