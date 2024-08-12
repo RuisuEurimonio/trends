@@ -8,6 +8,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body{
+    position: relative;
+}
+
 :root{
     --background: #000000;
     --secondary-background: #1a1a1a;
@@ -49,6 +53,10 @@ h1, h2, h3, h4, h5, h6{
     text-shadow: 0rem .5rem 2rem var(--main-accent-color);
 }
 
+img{
+    object-fit: cover;
+}
+
 .title{
     font-size: 5rem;
     text-align: center;
@@ -83,9 +91,12 @@ li.pink__neon__text{
 }
 
 .icon{
+    width: 2rem;
+}
+
+.icon__animated{
     position: absolute;
     bottom: 4rem;
-    width: 2rem;
     animation: infinite 5s DownToUp alternate-reverse;
 }
 

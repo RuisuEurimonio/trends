@@ -8,13 +8,21 @@
     <link href="./css/container1.css" rel="stylesheet">
     <link href="./css/container2.css" rel="stylesheet">
     <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/modal.css" rel="stylesheet">
     <title> Presentación métricas de calidad.</title>
+    <script type="module">
+        import 'aos/dist/aos.css';
+        import AOS from 'aos';
+        AOS.init();
+      </script>
 </head>
 
 <body>
     <header class="header">
         <nav class="nav__container">
             <ul class="nav__list">
+                <li class="nav__item"> <a class="pink__neon__text" href="/#"> Inicio. </a>
+                </li>
                 <li class="nav__item"> <a class="pink__neon__text" href="/#tendencias"> Tendencias técnologicas. </a>
                 </li>
                 <li class="nav__item"> <a class="pink__neon__text" href="/"> Ciclos de vida de desarrollo. </a> </li>
@@ -26,81 +34,153 @@
     <section class="container1">
         <h1 class="title" id="mainTitle"> </h1>
         <h2 class="subtitle" id="mainSubTitle"> </h2>
-        <img class="icon icon-arrow" src="./assets/svg/arrow-down.svg">
+        <img class="icon icon__animated icon-arrow" src="./assets/svg/arrow-down.svg">
     </section>
 
     <section class="container2" id="tendencias">
-        <h2>Tendencias tecnologícas.</h2>
-        <h3> 2024 </h3>
-        <p> Son informes y eventos en los cuales se destacan innovaciones y desarrollos más importantes. </p>
-        <p> Para más información visita <a href="https://www.gartner.es/es/acerca-de" target="_blank"> <cite> Sobre
+        <h2 class="box__title" id="titleTrends"><!-- Tendencias tecnologícas. --></h2>
+        <h3 class="box__subtitle" id="yearTrends"> <!-- 2024 --> </h3>
+        <p class="box__text" data-aos="fade-down" data-aos-anchor-placement="top-center"> Son informes y eventos en los cuales se destacan innovaciones y desarrollos más importantes. </p>
+        
+        <div class="table" data-aos="zoom-in-down" data-aos-anchor-placement="top-center" data-aos-duration="2000"> 
+            <div class="table__left">
+                <h2 class="box__title"> Gartner. </h2>
+                <p class="box__text"> Principal firma de investigación y asesoría tecnológica. </p>
+                <p class="box__cite"> Para más información visita <a href="https://www.gartner.es/es/acerca-de" target="_blank"> <cite class="box__cite-link"> Sobre
                     Gartner. </cite></a> </p>
-        <div>
-            <div>
-                <h2> Gartner. </h2>
-                <p> Principal firma de investigación y asesoría tecnológica </p>
-                <ul>
-                    <li>
-                        <h3> Desarrollo asistido por IA. </h3>
-                        <p> Optimiza, agiliza y mejora tu desarrollo en todos los ciclos de vida con IA </p>
-                        <p> Ejemplos: </p>
-                        <ul>
-                            <li> Github Copilot - generación de código. </li>
-                            <li> ChatGPT - traducción de código. </li>
-                            <li> IA generativa - Priorice, detecte y mida la deuda técnica. </li>
+                <ul class="list" data-aos="fade-down">
+                    <li class="list__item">
+                        <h3 class="list__title"> Desarrollo asistido por IA. </h3>
+                        <p class="list__text"> Optimiza, agiliza y mejora tu desarrollo en todos los ciclos de vida con IA. </p>
+                        <p class="list__text"> Ejemplos: </p>
+                        <ul class="sublist">
+                            <li class="sublist__item"> Github Copilot - generación de código. </li>
+                            <li class="sublist__item"> ChatGPT - traducción de código. </li>
+                            <li class="sublist__item"> IA generativa - Priorice, detecte y mida la deuda técnica. </li>
                         </ul>
-                        <img class="icon icon__list" src="./assets/svg/robot.svg" />
-                        <p>Lee más sobre la IA y el desarrollo en el artículo <a
+                        <img class="icon list__icon" src="./assets/svg/robot.svg" />
+                        <p class="list__cite">Lee más sobre la IA y el desarrollo en el artículo <a
                                 href="https://www.gartner.com/en/articles/set-up-now-for-ai-to-augment-software-development?_its=JTdCJTIydmlkJTIyJTNBJTIyM2E4YmQxZWEtYTgxMS00NTRjLWFjN2MtN2FlM2RlZGZjZTk4JTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTcyMzQxNjAwMn5sYW5kfjJfMTY0NjVfc2VvXzlhY2IwMjk3ZDJmODkwNTZhOGEyMTc3ODg3MmZkOGM0JTIyJTdE&_gl=1*hesq66*_ga*MjExMDQzNDkxMy4xNzIzMTY3NDMx*_ga_R1W5CE5FEV*MTcyMzQxNTIwNS4yLjEuMTcyMzQxNjAwMS41NC4wLjA."
-                                target="_blank"><cite>Demand Grows for Intelligent Applications Powered by AI</cite></a>
+                                target="_blank"><cite class="list__cite-link">"Demand Grows for Intelligent Applications Powered by AI" </cite></a>
                             publicado por <strong>Gartner</strong>.</p>
                     </li>
-                    <li>
-                        <h3>Tecnología sostenible</h3>
-                        <p>Existen ventajas y desventajas al combinar "IA para sostenibilidad" y "Sostenibilidad de la
+                    <li class="list__item">
+                        <h3 class="list__title">Tecnología sostenible.</h3>
+                        <p class="list__text">Existen ventajas y desventajas al combinar "IA para sostenibilidad" y "Sostenibilidad de la
                             IA".</p>
 
-                        <blockquote
+                        <blockquote 
                             cite="https://www.gartner.com/en/articles/keep-ai-from-doing-more-climate-harm-than-good?_its=JTdCJTIydmlkJTIyJTNBJTIyM2E4YmQxZWEtYTgxMS00NTRjLWFjN2MtN2FlM2RlZGZjZTk4JTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTcyMzQxNTIwN35sYW5kfjJfMTY0NjVfc2VvXzlhY2IwMjk3ZDJmODkwNTZhOGEyMTc3ODg3MmZkOGM0JTIyJTdE&_gl=1*118xmje*_ga*MjExMDQzNDkxMy4xNzIzMTY3NDMx*_ga_R1W5CE5FEV*MTcyMzQxNTIwNS4yLjEuMTcyMzQxNjczMC42MC4wLjA.">
-                            <p>Un <a href="http://arxiv.org/pdf/2304.03271">estudio reciente</a> sostiene que ChatGPT
+                            <p class="list__cite-paragraph">Un <a class="list__cite-link" href="http://arxiv.org/pdf/2304.03271">estudio reciente</a> sostiene que ChatGPT
                                 necesita “beber” una botella de agua de 500 ml por cada 20 a 50 preguntas y respuestas
                                 sencillas (y GPT-4 tiene aún más sed).</p>
                         </blockquote>
-                        <p>Fuente: <a
+                        <p class="list__cite">Fuente: <a
                                 href="https://www.gartner.com/en/articles/keep-ai-from-doing-more-climate-harm-than-good?_its=JTdCJTIydmlkJTIyJTNBJTIyM2E4YmQxZWEtYTgxMS00NTRjLWFjN2MtN2FlM2RlZGZjZTk4JTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTcyMzQxNTIwN35sYW5kfjJfMTY0NjVfc2VvXzlhY2IwMjk3ZDJmODkwNTZhOGEyMTc3ODg3MmZkOGM0JTIyJTdE&_gl=1*118xmje*_ga*MjExMDQzNDkxMy4xNzIzMTY3NDMx*_ga_R1W5CE5FEV*MTcyMzQxNTIwNS4yLjEuMTcyMzQxNjczMC42MC4wLjA."
-                                target="_blank"><cite>Gartner</cite></a></p>
-
-                        <ul>
-                            <li>Optimizar la IA como el ser humano.</li>
-                            <li>Utilizar la IA solo cuando se requiera.</li>
-                            <li>Mejorar y usar el ambiente adecuado de entrenamiento.</li>
+                                target="_blank"><cite class="list__cite-link">Gartner</cite></a></p>
+                        <p class="list__text"> Casos de uso: </p>
+                        <ul class="sublist">
+                            <li class="sublist__item">Optimizar la IA como el ser humano.</li>
+                            <li class="sublist__item">Utilizar la IA solo cuando se requiera.</li>
+                            <li class="sublist__item">Mejorar y usar el ambiente adecuado de entrenamiento.</li>
                         </ul>
 
-                        <img class="icon icon__list" src="./assets/svg/technology.svg" alt="Technology">
+                        <img class="icon list__icon" src="./assets/svg/technology.svg" alt="Technology">
 
-                        <p>Lee más sobre la IA y el desarrollo en el artículo <a
+                        <p class="list__cite">Lee más sobre la IA y el desarrollo en el artículo <a
                                 href="https://www.gartner.com/en/articles/set-up-now-for-ai-to-augment-software-development?_its=JTdCJTIydmlkJTIyJTNBJTIyM2E4YmQxZWEtYTgxMS00NTRjLWFjN2MtN2FlM2RlZGZjZTk4JTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTcyMzQxNjAwMn5sYW5kfjJfMTY0NjVfc2VvXzlhY2IwMjk3ZDJmODkwNTZhOGEyMTc3ODg3MmZkOGM0JTIyJTdE&_gl=1*hesq66*_ga*MjExMDQzNDkxMy4xNzIzMTY3NDMx*_ga_R1W5CE5FEV*MTcyMzQxNTIwNS4yLjEuMTcyMzQxNjAwMS41NC4wLjA."
-                                target="_blank"><cite>Keep AI From Doing More Climate Harm Than Good</cite></a>,
+                                target="_blank"><cite class="list__cite-link">"Keep AI From Doing More Climate Harm Than Good"</cite></a>,
                             publicado por <strong>Gartner</strong>.</p>
                     </li>
-                    <li>
-                        <h3>Plataformas industriales en la nube.</h3>
-                        <p> Adaptación rapida de procesos y aplicaciones, con su enfoque modular y componible, trayendo soluciones relevantes para la industria, combinando servicios como IaaS, PaaS y SaaS. Estas nubes ofrecen un conjunto completo de capacidades relevantes que crean valor agregado. </p>
-                        <img class="icon icon__list" src="./assets/svg/cloud.svg" />
-                        <p>Lee más sobre la la industria y la nube en el artículo <a
+                    <li class="list__item">
+                        <h3 class="list__title">Plataformas industriales en la nube.</h3>
+                        <p class="list__text"> Adaptación rapida de procesos y aplicaciones, con su enfoque modular y componible, trayendo soluciones relevantes para la industria, combinando servicios como IaaS, PaaS y SaaS. Estas nubes ofrecen un conjunto completo de capacidades relevantes que crean valor agregado. </p>
+                        <img class="icon list__icon" src="./assets/svg/cloud.svg" />
+                        <p class="list__cite">Lee más sobre la la industria y la nube en el artículo <a
                             href="https://www.gartner.com/en/articles/what-are-industry-cloud-platforms?_its=JTdCJTIydmlkJTIyJTNBJTIyM2E4YmQxZWEtYTgxMS00NTRjLWFjN2MtN2FlM2RlZGZjZTk4JTIyJTJDJTIyc3RhdGUlMjIlM0ElMjJybHR%2BMTcyMzQxNTIwN35sYW5kfjJfMTY0NjVfc2VvXzlhY2IwMjk3ZDJmODkwNTZhOGEyMTc3ODg3MmZkOGM0JTIyJTdE&_gl=1*t32f01*_ga*MjExMDQzNDkxMy4xNzIzMTY3NDMx*_ga_R1W5CE5FEV*MTcyMzQxNTIwNS4yLjEuMTcyMzQxNjc0MS40OS4wLjA."
-                            target="_blank"><cite>What Are Industry Cloud Platforms?</cite></a>,
+                            target="_blank"><cite class="list__cite-link">"What Are Industry Cloud Platforms?"</cite></a>,
                         publicado por <strong>Gartner</strong>.</p>
                     </li>
                 </ul>
             </div>
-            <div>
-                <h2> CES (Consumer Electronics Show). </h2>
+            <div class="table__right">
+                <h2 class="box__title"> CES (Consumer Electronics Show). </h2>
+                <p class="box__text"> Principal fería comercial siendo la más grande e importante en el ambito tecnológico, la cual reune a fabricantes, empresas y personas con proyectos y tecnologías innovadoras. </p>
+                <p class="box__cite"> Para más información visita <a href="https://www.ces.tech/about-ces/about-ces.aspx" target="_blank"> <cite class="box__cite-link"> The Global Impact of CES 2024. </cite></a> </p>
+                <ul class="list" data-aos="fade-down">
+                    <li class="list__item">
+                        <h3 class="list__title"> Uso de la IA </h3>
+                        <p class="list__text"> La IA como protagonista, destacandose proyectos y productos los cuales usaban de esta, con un enfoque benefico en pro de la sociedad y del individuo. </p>
+                        <p class="list__text"> Poryectos destacables: </p>
+                        <ul class="sublist">
+                            <li class="sublist__item"> Conducción autómota como solución comercial e industrial. </li>
+                            <li class="sublist__item"> Hogares inteligentes integrando dispositivos tecnológicos y robots. </li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__title">Bienestar y salud</h3>
+                        <p class="list__text"> Se presentaron proyectos enfocados a la medicina con grandes beneficios para las personas.</p>
+                        <p class="list__text"> Proyectos destacables: </p>
+                        <ul class="sublist">
+                            <li class="sublist__item list__link" id="gyroGloveButton"> Guantes para controlar el parkison.</li>
+                            <li class="sublist__item list__link" id="glideButton"> Un bastón con inteligencia artificial para personas en discapacidad.</li>
+                            <li class="sublist__item list__link" id="beamOButton"> BeamO, un dispositivo de monitoreo de salud digital.</li>
+                        </ul>
+                    </li>
+                    <li class="list__item">
+                        <h3 class="list__title"> Sostenibilidad y Ecoeficiencia:.</h3>
+                        <p class="list__text"> Se prioriza el uso de la energía y se busca optimizar su consumo, con proyectos enfocados a mejorar el rendimiento del consumo de la energía hasta el uso de energías renovables. </p>
+                        
+                    </li>
+                </ul>
+                <h3 class="box__title box__action" id="videoVlogButton"> Conoce más sobre proyectos e inventos del CES 2024 </h3>
             </div>
         </div>
     </section>
 
+    <section class="modal hidden" id="gyroGlove">
+        <div class="modal__container" id="gyroGloveContainer">
+            <h3 class="modal__title"> GyroGlove. </h3>
+            <figure>
+                <img src="./assets/img/gyroglove.webp" class="modal__image">
+                <figcaption> Versión comercial del prototipo presentado en el CES 2024. </figcaption>
+            </figure>
+            <p> Conoce más sobre <a href="https://gyrogear.co/" target="_blank"> <strong class="modal__link"> GyroGlove. </strong> </a> </p>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="beamO">
+        <div class="modal__container" id="beamOContainer">
+            <h3 class="modal__title"> BeamO. </h3>
+            <figure>
+                <img src="./assets/img/Withings-Beamo-1.webp" class="modal__image">
+                <figcaption> Mide temperatura, frecuencia cardiaca y sistema respiratorio. </figcaption>
+            </figure>
+            <p> Conoce más sobre <a href="https://www.withings.com/us/en/beam-o" target="_blank"> <strong class="modal__link"> BeamO. </strong> </a> </p>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="glide">
+        <div class="modal__container" id="glideContainer">
+            <h3 class="modal__title"> Glide. </h3>
+            <figure>
+                <img src="./assets/img/glide.webp" class="modal__image">
+                <figcaption> Robot para la ayuda auto guiada basada en IA. </figcaption>
+            </figure>
+            <p> Conoce más sobre <a href="https://glidance.io/" target="_blank"> <strong class="modal__link"> Glide. </strong> </a> </p>
+        </div>
+    </section>
+
+    <section class="modal hidden" id="videovlog">
+        <div class="modal__container" id="videovlogContainer">
+            <h3 class="modal__title"> Video vlog de CES 2024. </h3>
+            <iframe class="modal__iframe" width="560" height="315" src="https://www.youtube.com/embed/Yrq8gi-BwUA?si=eMButz-qCBOl2zCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
     <script type="module" src="./js/firstModule.js"></script>
+    <script src="./js/tableEvents.js"></script>
+
 </body>
 
 </html>

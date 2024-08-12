@@ -30,3 +30,19 @@ const title = new TypeIt("#mainTitle",{
     .pause(500)
     .go();
 
+const titleTrends = new TypeIt("#titleTrends",{
+    speed:100,
+    waitUntilVisible: true,
+    afterComplete: ()=>{yearTrend.go(), titleTrends.destroy()}
+}).type("Tendencias tecnologicas.")
+    .pause(500)
+    .delete(7)
+    .type("ógicas.")
+    .pause(500)
+    .go();
+
+const yearTrend = new TypeIt("#yearTrends",{
+    speed: 100,
+    waitUntilVisible: true,
+    afterComplete: ()=> {yearTrend.destroy()}
+}).type("2024.");
