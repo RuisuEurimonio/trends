@@ -1,0 +1,33 @@
+.container4{
+    width: 100%;
+    min-height: 150vh;
+}
+
+.short__text{
+    max-width: 15rem;
+    margin: 1rem auto;
+}
+
+.shot__text-sm{
+    max-width: 5rem;;
+}
+
+.map__line{
+    width: 65%;
+    border-width: .3rem;
+    outline: 0;
+    border-style: solid;
+    border-radius: 2rem;
+}
+
+.list__container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.list__item-map{
+    width: 19%;
+}

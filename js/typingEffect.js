@@ -59,3 +59,14 @@ const cycleTitle = new TypeIt("#cycleTitle",{
     .type("software.")
     .pause(700)
     .go();
+
+const components = new TypeIt("#components",{
+    speed: 100,
+    waitUntilVisible : true,
+    afterComplete : ()=>{components.destroy()}
+}).pause(500)
+    .type("Componentes y métricas")
+    .break()
+    .type("de calidad de software.")
+    .pause(500)
+    .go();
