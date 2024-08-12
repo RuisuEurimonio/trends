@@ -18,7 +18,7 @@
     box-shadow: 0 .7rem 2rem var(--main-accent-color);
 }
 
-.table__left, .table_right{
+.table__left, .table__right{
     padding: .5rem;
 }
 

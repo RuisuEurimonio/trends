@@ -9,6 +9,8 @@
     <link href="./css/container2.css" rel="stylesheet">
     <link href="./css/header.css" rel="stylesheet">
     <link href="./css/modal.css" rel="stylesheet">
+    <link href="./assets/svg/logo.svg" rel="icon">
+    <link href="./css/container3.css" rel="stylesheet">
     <title> Presentación métricas de calidad.</title>
     <script type="module">
         import 'aos/dist/aos.css';
@@ -25,7 +27,7 @@
                 </li>
                 <li class="nav__item"> <a class="pink__neon__text" href="/#tendencias"> Tendencias técnologicas. </a>
                 </li>
-                <li class="nav__item"> <a class="pink__neon__text" href="/"> Ciclos de vida de desarrollo. </a> </li>
+                <li class="nav__item"> <a class="pink__neon__text" href="/#ciclos"> Ciclos de vida de desarrollo. </a> </li>
                 <li class="nav__item"> <a class="pink__neon__text" href="/"> Descripción de componentes. </a> </li>
             </ul>
         </nav>
@@ -174,11 +176,102 @@
     <section class="modal hidden" id="videovlog">
         <div class="modal__container" id="videovlogContainer">
             <h3 class="modal__title"> Video vlog de CES 2024. </h3>
-            <iframe class="modal__iframe" width="560" height="315" src="https://www.youtube.com/embed/Yrq8gi-BwUA?si=eMButz-qCBOl2zCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="modal__iframe modal__image" width="560" height="315" src="https://www.youtube.com/embed/Yrq8gi-BwUA?si=eMButz-qCBOl2zCy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
-    <script type="module" src="./js/firstModule.js"></script>
+    <section class="container3" id="ciclos">
+        <h2 class="box__title" id="cycleTitle"> <!-- Ciclos de vida del desarrollo del software. --> </h2>
+        <div class="center" data-aos="fade-down" data-aos-anchor-placement="top-center">
+            <img class="icon" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia abajo">
+        </div>
+        <p class="center" data-aos="fade-down" data-aos-anchor-placement="top-center"> Proceso rentable y eficiente. </p>
+        <div class="center" data-aos="fade-down" data-aos-anchor-placement="top-center">
+            <img class="icon center" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia abajo">
+        </div>
+        <p class="center" data-aos="fade-down" data-aos-anchor-placement="top-center"> Reducir riesgos, costos, contratiempos y optimizar el tiempo.  </p>
+        <div class="center" data-aos="fade-down" data-aos-anchor-placement="top-center">
+            <img class="icon center" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia abajo">
+        </div>
+        <p class="center" data-aos="fade-down" data-aos-anchor-placement="top-center"> Se establecen objetivos y requisitos por adelantado que contemplan ambas partes.  </p>
+        <div class="center" data-aos="fade-down" data-aos-anchor-placement="top-center">
+            <img class="icon center" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia abajo">
+        </div>
+        <div class="row">
+            <ul class="subfases group" data-aos="fade-right" data-aos-anchor-placement="center-center">
+                <li>
+                    <p class="center"> Documentación donde se describen todos los aspectos del proyecto(costos, beneficios, requisitos, etc.). </p>
+                </li>
+                <li>
+                    <p class="center"> Se analizan los requerimientos y con base a estos se escogen tecnologias y herramientas de desarrollo. </p>
+                </li>
+                <li>
+                    <p class="center"> Codificación del producto con las tecnologías seleccionadas, dividiendose en tareas. </p>
+                </li>
+            </ul>
+            <ul class="subfases arrows space" data-aos="fade-right" data-aos-anchor-placement="center-center">
+                <li>
+                    <img class="icon small-icon icon-rotate-custom" style="--r: 100deg" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia la izquierda">
+                </li>
+                <li>
+                    <img class="icon small-icon icon-rotate-custom" style="--r: 90deg" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia la izquierda">
+                </li>
+                <li>
+                    <img class="icon small-icon icon-rotate-custom" style="--r: 80deg" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia la izquierda">
+                </li>
+            </ul>
+            <ul class="fases group--titles" data-aos="fade-right" data-aos-anchor-placement="center-center">
+                <li>
+                    <p class="center"> Planificacion </p>
+                </li>
+                <li>
+                    <p class="center"> Diseño </p>
+                </li>
+                <li>
+                    <p class="center"> Implementación </p>
+                </li>
+            </ul>
+            <img class="icon icon-rotate90" data-aos="fade-right" data-aos-anchor-placement="top-center" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia abajo">
+            <p class="center inline group" data-aos="fade-up" data-aos-anchor-placement="top-center">  Se manejan unas fases comunes. </p>
+            <img class="icon icon-rotate270" data-aos="fade-left" data-aos-anchor-placement="top-center" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia abajo">
+            <ul class="fases group--titles" data-aos="fade-left" data-aos-anchor-placement="center-center">
+                <li>
+                    <p class="center "> Pruebas </p>
+                </li>
+                <li>
+                    <p class="center"> Despliegue </p>
+                </li>
+                <li>
+                    <p class="center"> Mantenimiento </p>
+                </li>
+            </ul>
+            <ul class="subfases arrows space" data-aos="fade-left" data-aos-anchor-placement="center-center">
+                <li>
+                    <img class="icon small-icon icon-rotate-custom" style="--r: 260deg" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia la derecha">
+                </li>
+                <li>
+                    <img class="icon small-icon icon-rotate-custom" style="--r: 270deg" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia la derecha">
+                </li>
+                <li>
+                    <img class="icon small-icon icon-rotate-custom" style="--r: 280deg" src="./assets/svg/arrow-down.svg" alt="Flecha apuntando hacia la derecha">
+                </li>
+            </ul>
+            <ul class="subfases group" data-aos="fade-left" data-aos-anchor-placement="center-center">
+                <li>
+                    <p class="center"> Se verifica la robustes del producto mediante pruebas, comprobando si cumple los requesitos del cliente. </p>
+                </li>
+                <li>
+                    <p class="center"> Subir la última copia verificada del producto de un entorno de pruebas a uno de producción. </p>
+                </li>
+                <li>
+                    <p class="center"> Supervición y mejora continua del producto, en los que puede haber corrección de errores, integración o eliminación de funciones. </p>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <script type="module" src="./js/typingEffect.js"></script>
     <script src="./js/tableEvents.js"></script>
 
 </body>

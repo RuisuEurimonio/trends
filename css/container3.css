@@ -1,0 +1,73 @@
+.container3{
+    width: 100%;
+    height: 100vh;
+    margin-top: 5rem;
+    overflow-x: hidden;
+}
+
+.center{
+    text-align: center;
+}
+
+.icon-center{
+    display: inline-block;
+}
+
+.icon-rotate90{
+    transform: rotate(90deg) !important;
+}
+
+.icon-rotate270{
+    transform: rotate(270deg) !important;
+}
+
+.icon-rotate-custom{
+    transform: rotate(var(--r));
+}
+
+.relative{
+    position: relative;
+}
+
+.inline{
+    display: inline;
+}
+
+.fases, .subfases{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.small-icon{
+    width: 1.1rem;
+}
+
+.group{
+    width: 23%;
+}
+
+.space{
+    gap: 2.3rem
+}
+
+.group--titles{
+    width: 15%;
+}
+
+.arrows{
+    justify-items: center;
+}
+
+.row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    transform: translateY(-30%);
+}

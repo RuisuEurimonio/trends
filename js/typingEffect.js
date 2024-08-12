@@ -46,3 +46,15 @@ const yearTrend = new TypeIt("#yearTrends",{
     waitUntilVisible: true,
     afterComplete: ()=> {yearTrend.destroy()}
 }).type("2024.");
+
+const cycleTitle = new TypeIt("#cycleTitle",{
+    speed: 100,
+    waitUntilVisible: true,
+    afterComplete: ()=>{cycleTitle.destroy()}
+}).type("Ciclos")
+    .pause(700)
+    .type(" de vida del desarrollo de ")
+    .pause(500)
+    .type("software.")
+    .pause(700)
+    .go();
