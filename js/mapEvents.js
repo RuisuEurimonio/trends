@@ -5,6 +5,11 @@ const scrumButton = document.getElementById("scrumButton");
 const devopsButton = document.getElementById("devopsButton");
 const kanbanButton = document.getElementById("kanbanButton")
 
+const toggleClass = (element) => {
+    element.classList.toggle("hidden");
+    element.classList.toggle("visible")
+}
+
 const cascade = document.getElementById("cascade")
 const cascadeContainer = document.getElementById("cascadeContainer")
 const prototipe = document.getElementById("prototipe")
