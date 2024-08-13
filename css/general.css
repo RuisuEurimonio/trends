@@ -83,12 +83,12 @@ a:hover{
     transition: all 1s;
 }
 
-p.pink__neon__text,
-a.pink__neon__text,
-span.pink__neon__text
-li.pink__neon__text{
-    color: var(--secondary-color);
-    text-shadow: 0rem .5rem 2rem var(--secondary-accent-color);
+p.blue__neon__text,
+a.blue__neon__text,
+span.blue__neon__text
+li.blue__neon__text{
+    color: var(--main-color);
+    text-shadow: 0rem .5rem 2rem var(--main-accent-color);
 }
 
 .icon{

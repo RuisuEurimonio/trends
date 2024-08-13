@@ -1,10 +1,10 @@
 import TypeIt from "typeit";
 
-const subtitle = new TypeIt("#mainSubTitle",{
-    speed:50,
+const subtitle = new TypeIt("#mainSubTitle", {
+    speed: 50,
     waitUntilVisible: true,
-    afterComplete: () => {subtitle.destroy();}
-}) .pause(1000)
+    afterComplete: () => { subtitle.destroy(); }
+}).pause(1000)
     .type("Por: ")
     .pause(400)
     .type("Luis Felipe Linares Perdomo")
@@ -12,12 +12,12 @@ const subtitle = new TypeIt("#mainSubTitle",{
     .type(".")
     .pause(500)
 
-const title = new TypeIt("#mainTitle",{
-    speed:100,
+const title = new TypeIt("#mainTitle", {
+    speed: 100,
     waitUntilVisible: true,
-    afterComplete : (async () => {subtitle.go(); title.destroy();}),
+    afterComplete: (async () => { subtitle.go(); title.destroy(); }),
 })
-    .type("Metricas", {delay: 300})
+    .type("Metricas", { delay: 300 })
     .delete(7)
     .type("étricas ")
     .pause(300)
@@ -30,10 +30,10 @@ const title = new TypeIt("#mainTitle",{
     .pause(500)
     .go();
 
-const titleTrends = new TypeIt("#titleTrends",{
-    speed:100,
+const titleTrends = new TypeIt("#titleTrends", {
+    speed: 100,
     waitUntilVisible: true,
-    afterComplete: ()=>{yearTrend.go(), titleTrends.destroy()}
+    afterComplete: () => { yearTrend.go(), titleTrends.destroy() }
 }).pause(1500)
     .type("Tendencias tecnologicas.")
     .pause(500)
@@ -42,16 +42,16 @@ const titleTrends = new TypeIt("#titleTrends",{
     .pause(500)
     .go();
 
-const yearTrend = new TypeIt("#yearTrends",{
+const yearTrend = new TypeIt("#yearTrends", {
     speed: 100,
     waitUntilVisible: true,
-    afterComplete: ()=> {yearTrend.destroy()}
+    afterComplete: () => { yearTrend.destroy() }
 }).type("2024.");
 
-const cycleTitle = new TypeIt("#cycleTitle",{
+const cycleTitle = new TypeIt("#cycleTitle", {
     speed: 100,
     waitUntilVisible: true,
-    afterComplete: ()=>{cycleTitle.destroy()}
+    afterComplete: () => { cycleTitle.destroy() }
 }).type("Ciclos")
     .pause(700)
     .type(" de vida del desarrollo de ")
@@ -60,13 +60,54 @@ const cycleTitle = new TypeIt("#cycleTitle",{
     .pause(700)
     .go();
 
-const components = new TypeIt("#components",{
+const components = new TypeIt("#components", {
     speed: 100,
-    waitUntilVisible : true,
-    afterComplete : ()=>{components.destroy()}
+    waitUntilVisible: true,
+    afterComplete: () => { components.destroy() }
 }).pause(500)
     .type("Componentes y métricas")
     .break()
     .type("de calidad de software.")
     .pause(500)
     .go();
+
+const bibliography = new TypeIt("#bibliography", {
+    speed: 100,
+    waitUntilVisible: true,
+    afterComplete: () => bibliography.destroy()
+}).pause(500)
+    .type("Bibliografia")
+    .pause(400)
+    .delete(2)
+    .type("ía.")
+    .pause(300)
+    .go();
+
+new TypeIt("#thanks", {
+    speed: 220,
+    waitUntilVisible: true,
+}).pause(500)
+.type("Muchas")
+.pause(400)
+.type(" ")
+.pause(300)
+.type("gracias por su tiempo ")
+.break()
+.pause(800)
+.delete(8)
+.break()
+.type("atención")
+.delete(8)
+.type("tiempo y atención")
+.pause(1000)
+.type(".")
+.pause(2000)
+.delete(41)
+.pause(500)
+.type(":D")
+.pause(300)
+.delete(2)
+.type("Muchas gracias por su")
+.break()
+.type("tiempo y atención.")
+.go()

@@ -1,0 +1,29 @@
+.container5{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 20vh;
+}
+
+.bibliographic{
+    width: 70%;
+    margin: auto;
+    border: var(--main-color) .4rem solid;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 1rem 1rem var(--main-accent-color);
+}
+
+.bibliographic__container{
+    padding-left: 1rem;
+    list-style: inside ;
+}
+
+.bibliographic__item{
+    margin: .7rem auto;
+}
+
+.bibliographic__link{
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+}
