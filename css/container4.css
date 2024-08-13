@@ -8,12 +8,12 @@
     margin: 1rem auto;
 }
 
-.shot__text-sm{
+.short__text-sm{
     max-width: 5rem;;
 }
 
 .map__line{
-    width: 65%;
+    width: 70%;
     border-width: .3rem;
     outline: 0;
     border-style: solid;
