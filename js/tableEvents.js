@@ -35,3 +35,5 @@ videovlogContainer.addEventListener("click", (e)=>{e.stopPropagation()})
 gyroGloveContainer.addEventListener("click", (e)=>{e.stopPropagation()})
 glideContainer.addEventListener("click", (e)=>{e.stopPropagation()})
 beamOContainer.addEventListener("click", (e)=>{e.stopPropagation()})
+
+console.log("Hola humano")

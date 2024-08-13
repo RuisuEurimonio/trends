@@ -37,3 +37,5 @@ incrementalContainer.addEventListener("click", (e)=>{ e.stopPropagation() });
 scrumContainer.addEventListener("click", (e)=>{ e.stopPropagation() });
 devopsContainer.addEventListener("click", (e)=>{ e.stopPropagation() });
 kanbanContainer.addEventListener("click", (e)=>{ e.stopPropagation() });
+
+console.log("Excelente")
