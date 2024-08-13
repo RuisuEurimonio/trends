@@ -6,7 +6,7 @@ export default defineConfig({
   },
   base: "trends",
   build: {
-    minify: false,
+    minify: true,
     rollupOptions: {
       input: {
         main: "index.html"
